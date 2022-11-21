@@ -1,3 +1,23 @@
-  <p><%= @question %></p>
-  <p><%= @answer %></p>
+
+<div class="container ml-3 mr-3">
+  <h1>Stupid coach</h1>
+
+  <figure class="p-2 border-start border-5 ps-3">
+    <blockquote class="blockquote">
+      <p><%= @question %></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <cite title="Source Title">You</cite>
+    </figcaption>
+  </figure>
+
+  <figure class="bg-warning p-2 bg-opacity-10 border-start border-5 ps-3">
+    <blockquote class="blockquote">
+      <p><%= @answer %></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <cite title="Source Title">Coach</cite>
+    </figcaption>
+  </figure>
   <%= link_to "Ask a new question", ask_path %>
+ </div>
